@@ -1,0 +1,19 @@
+version: "3.5"
+services:
+  app:
+    image: ruby:3.0.0
+    build: 
+      context: .
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "3000:3000"
+    container_name: loans_app  
+    environment:
+      RAILS_ENV: development
+    env_file: .env
+    stdin_open: true
+    tty: true
+
+volumes:
+  gems:    
