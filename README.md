@@ -33,6 +33,9 @@ LOS (Loan Origination System)
   - The index controller must render a paginated list of all loans
   - Each loan must display the borrower name, status & credit score
 
+
+
+
 # (Requirements App 2)[ https://dev.to/mknycha/serverless-web-scraper-in-ruby-tutorial-50hgb ]
 
 https://dev.to/mknycha/serverless-web-scraper-in-ruby-tutorial-50hg

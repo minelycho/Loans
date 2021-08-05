@@ -1,0 +1,2 @@
+@import 'boostraps-sprockets';
+@import 'boostraps';
