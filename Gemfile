@@ -30,6 +30,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 gem 'bootstrap-sass'
 gem 'rexml'
 gem 'devise'
+gem 'devise-security'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -38,6 +39,8 @@ group :development, :test do
   gem 'rspec'
   gem 'factory_bot_rails'
   gem 'spring-commands-rspec'
+  gem 'faker', :git => 'https://github.com/faker-ruby/faker.git'
+
 end
 
 group :development do
