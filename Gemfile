@@ -40,7 +40,7 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'spring-commands-rspec'
   gem 'faker', :git => 'https://github.com/faker-ruby/faker.git'
-
+  gem 'rails-controller-testing'
 end
 
 group :development do
