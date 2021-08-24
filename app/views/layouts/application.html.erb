@@ -12,7 +12,37 @@
 
   <body>
 
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="/">Our Logo</a>
+  <form class="form-inline">
+    <div style="padding-left: 10px;">
+
+      <% if user_signed_in? %>
+
+ <a class="btn btn-outline-success" role="button">
+      <%= current_user.email %>
+      </a>
+
+            <a class="btn btn-outline-success" role="button">
+      <%= link_to 'Sign out',  destroy_user_session_url %>
+      </a>
+
+      <% else %>
+        <a class="btn btn-outline-success" role="button">
+        <%= link_to 'Register',  new_user_registration_url %>
+        </a>
+
+        <a class="btn btn-outline-success" role="button">
+        <%= link_to 'Sign in',  new_user_session_url %>
+        </a>
+      <% end %>
+
+    </div>
+  </form>
+</nav>
+
     <%= yield %>
+
 
 </div>
 
